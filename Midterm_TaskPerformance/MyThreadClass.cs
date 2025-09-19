@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace Midterm_TaskPerformance
     {
         public static void Thread1()
         {
-            for (int i = 0; i <= 2; i++)
+            for (int i = 0; i <=2; i++)
             {
                 Thread thread = Thread.CurrentThread;
 
@@ -21,12 +22,12 @@ namespace Midterm_TaskPerformance
         }
         public static void Thread2()
         {
-            for (int i = 0; i <= 3; i++)
+            for (int i = 0; i <=3; i++)
             {
                 Thread thread = Thread.CurrentThread;
 
                 Console.WriteLine("Name of Thread: " + thread.Name + " Process = " + i);
-                Thread.Sleep(1500);
+                Thread.Sleep(1600);
             }
         }
     }
