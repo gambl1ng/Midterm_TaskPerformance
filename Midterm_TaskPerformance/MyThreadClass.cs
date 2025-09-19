@@ -22,7 +22,7 @@ namespace Midterm_TaskPerformance
         }
         public static void Thread2()
         {
-            for (int i = 0; i <=3; i++)
+            for (int i = 0; i <=6; i++)
             {
                 Thread thread = Thread.CurrentThread;
 
